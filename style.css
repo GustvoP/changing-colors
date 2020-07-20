@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  animation-name: pagecolorchange;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+}
+
+.text {
+  padding: 15px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 10px;
+  font-size: 5em;
+  border: solid 2px;
+  color: rgb(255, 255, 255);
+  animation-name: textcolorchange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pagecolorchange {
+  0% {
+    background-color: #142850;
+  }
+  10% {
+    background-color: #27496d;
+  }
+  20% {
+    background-color: #0c7b93;
+  }
+  30% {
+    background-color: #00a8cc;
+  }
+  40% {
+    background-color: #4a69bb;
+  }
+  50% {
+    background-color: #617be3;
+  }
+  60% {
+    background-color: #9aceff;
+  }
+  70% {
+    background-color: #dcd6f7;
+  }
+  80% {
+    background-color: #f4eeff;
+  }
+  90% {
+    background-color: #27496d;
+  }
+  100% {
+    background-color: #142850;
+  }
+}
+
+@keyframes textcolorchange {
+  0% {
+    color: #900c3f;
+  }
+  15% {
+    color: #c70039;
+  }
+  30% {
+    color: #ff5733;
+  }
+  45% {
+    color: #f89d13;
+  }
+  60% {
+    color: #ffc300;
+  }
+  75% {
+    color: #f89d13;
+  }
+  90% {
+    color: #ff5733;
+  }
+  100% {
+    color: #900c3f;
+  }
+}
