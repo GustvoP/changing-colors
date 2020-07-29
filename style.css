@@ -2,13 +2,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
-  animation-name: pagecolorchange;
-  animation-duration: 13s;
-  animation-iteration-count: infinite;
+  background-color: black;
+}
+
+.button {
+  outline: none;
+  font-size: 1.6em;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 15px;
+  border: solid 2px white;
+  background: none;
+}
+
+.button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
 }
 
 .text {
@@ -19,12 +33,21 @@ body {
   font-size: 5em;
   border: solid 2px;
   color: rgb(255, 255, 255);
-  animation-name: textcolorchange;
+}
+
+.textAnimation {
+  animation-name: textColorChange;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-@keyframes pagecolorchange {
+.backgroundAnimation {
+  animation-name: backgroundColorChange;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes backgroundColorChange {
   0% {
     background-color: #142850;
   }
@@ -38,19 +61,19 @@ body {
     background-color: #00a8cc;
   }
   40% {
-    background-color: #4a69bb;
+    background-color: #6124a7;
   }
   50% {
-    background-color: #617be3;
+    background-color: #a71787;
   }
   60% {
-    background-color: #9aceff;
+    background-color: #188a80;
   }
   70% {
-    background-color: #dcd6f7;
+    background-color: #3c78a0;
   }
   80% {
-    background-color: #f4eeff;
+    background-color: #103e4d;
   }
   90% {
     background-color: #27496d;
@@ -60,7 +83,7 @@ body {
   }
 }
 
-@keyframes textcolorchange {
+@keyframes textColorChange {
   0% {
     color: #900c3f;
   }

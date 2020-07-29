@@ -9,8 +9,27 @@
     <title>Colors</title>
 </head>
 
-<body>
-    <h1 class="text">COLORS</h1>
+<body id="backg">
+    <h1 class="text" id="text">COLORS</h1>
+    <div>
+        <button class="button" toggleBackground>ON/OFF Background</button>
+        <button class="button" toggleText>ON/OFF Colors</button>
+    </div>
 </body>
+
+<script>
+    function toggleBackground() {
+        document.getElementById('backg').classList.toggle('backgroundAnimation')
+    }
+
+    function toggleText() {
+        document.getElementById('text').classList.toggle('textAnimation')
+    }
+
+    const bg = document.querySelector('[toggleBackground]')
+    const txt = document.querySelector('[toggleText]')
+    bg.onclick = toggleBackground
+    txt.onclick = toggleText
+</script>
 
 </html>
